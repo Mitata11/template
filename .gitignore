@@ -1,0 +1,27 @@
+Code/out
+
+# Latex Extras
+Report/*.log
+Report/*.aux
+Report/*.pdf
+Report/*.synctex.gz
+Report/*.log
+
+# C stuff
+*.o
+*.gch
+
+# Java
+*.class
+
+# Libraries
+*.lib
+*.a
+*.jar
+
+# Extras
+*.zip
+*.tar.gz
+.ipynb_checkpoints
+venv
+
