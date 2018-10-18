@@ -1,4 +1,5 @@
 Code/out
+Code/data
 
 # Latex Extras
 Report/*.log
@@ -19,9 +20,18 @@ Report/*.log
 *.a
 *.jar
 
+# Python
+__pycache__/*
+*.pyc
+
+
 # Extras
 *.zip
 *.tar.gz
 .ipynb_checkpoints
 venv
+.~lock*
+*.trail
+
+
 
