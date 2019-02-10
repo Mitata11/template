@@ -1,16 +1,27 @@
 \documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
 
 \usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{wrapfig}
+\usepackage{booktabs} % tables, I think
+\usepackage{listings} % code listings
+\usepackage{amsmath} % multi line maths
 \usepackage{graphicx}
+
 \graphicspath{ {Images/} }
-\usepackage{booktabs}
 \pagenumbering{gobble}
 
+\usepackage{cite}
 
 %Utilities:
+
+	
+%\begin{lstlisting}[caption=Code]
+%\end{lstlisting}
+
+%bibtex
+%\cite{...}
 
 %\begin{enumerate}
 %	\item 
@@ -32,6 +43,7 @@
 	\section*{Abstract}
 	
 	\pagebreak
+	% Don't number title page
 	\pagenumbering{arabic}
 	\section{Introduction}
 	\subsection{Structure}
@@ -39,28 +51,15 @@
 	\section{Implementation}
 	
 	\section{Testing}
-	
+
 	\section{Results}
 	
 	\pagebreak
-	\begin{thebibliography}{9}
-		
-		% Vancover referancing
-		% each work is numbered by first appearance
-		% Help: http://guides.lib.monash.edu/ld.php?content_id=14570618
-		
-		%\cite{1}
-		
-		%\pagebreak
-		%\bibitem{1}
-		%Referance:
-		
-		% Digital Journal
-		%Author AA, Author BB. Title of article. Abbreviated title of Journal [Internet]. Date of publication YYYY MM [cited YYYY Mon DD];volume number(issue number):page numbers. Available from: URL
-		
-		% Print Article/non-internet
-		% Author AA, Author BB, Author CC, Author DD. Title of article. Abbreviated title of journal. Date of publication YYYY Mon DD;volume number(issue number):page numbers.
-	\end{thebibliography}
+
+	\bibliography{references}
+	\bibliographystyle{plain}
+
+
 \end{document}
 
 

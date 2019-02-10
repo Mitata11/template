@@ -2,11 +2,14 @@ Code/out
 Code/data
 
 # Latex Extras
-Report/*.log
-Report/*.aux
+*.log
+*.aux
 Report/*.pdf
-Report/*.synctex.gz
-Report/*.log
+*.synctex.gz
+*.bbl 
+*.dvi 
+*.blg 
+
 
 # C stuff
 *.o
