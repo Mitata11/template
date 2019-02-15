@@ -1,6 +1,6 @@
 BIB=references.bib
-RER=Report
-TEX=$(RER).tex
+DOC=Report
+TEX=$(DOC).tex
 BIBTEX=bibtex
 LATEX=pdflatex
 
@@ -12,10 +12,10 @@ LATEX=pdflatex
 # Insert referances
 # Update page numbers if necessary
 all: $(TEX) $(BIB)
-	$(LATEX) $(TEX); $(BIBTEX) $(REP); $(LATEX) $(TEX);$(LATEX) $(TEX);
+	$(LATEX) $(TEX); $(BIBTEX) $(DOC); $(LATEX) $(TEX);$(LATEX) $(TEX);
 
 
 # All that exist
 .PHONY: clean
 clean:
-	rm -f Report.bbl Report.dvi Report.aux Report.blg Report.log
+	rm -f $(DOC).bbl $(DOC).dvi $(DOC).aux $(DOC).blg $(DOC).log
