@@ -1,3 +1,5 @@
+# Ignorable directories
+Ignore
 Code/out
 Code/data
 
@@ -9,7 +11,6 @@ Report/*.pdf
 *.bbl 
 *.dvi 
 *.blg 
-
 
 # C stuff
 *.o
@@ -27,14 +28,12 @@ Report/*.pdf
 __pycache__/*
 *.pyc
 
-
 # Extras
 *.zip
 *.tar.gz
 .ipynb_checkpoints
 venv
 .~lock*
-*.trail
-
+*.swp
 
 
