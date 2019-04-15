@@ -6,11 +6,28 @@ Code/data
 # Latex Extras
 *.log
 *.aux
-Report/*.pdf
 *.synctex.gz
-*.bbl 
-*.dvi 
-*.blg 
+*.log
+*.aux
+*.synctex.gz
+*.log
+*.bbl
+*.blg
+*.toc
+*.acn
+*.acr
+*.alg
+*.ist
+*.out
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.out
+*.ac
+*.bcf
+*.expand
+*.flg
 
 # C stuff
 *.o

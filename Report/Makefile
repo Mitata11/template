@@ -12,10 +12,10 @@ LATEX=pdflatex
 # Insert referances
 # Update page numbers if necessary
 all: $(TEX) $(BIB)
-	$(LATEX) $(TEX); $(BIBTEX) $(DOC); $(LATEX) $(TEX);$(LATEX) $(TEX);
+	$(LATEX) $(TEX); makeglossaries $(DOC); $(BIBTEX) $(DOC); $(LATEX) $(TEX); $(LATEX) $(TEX);
 
 
 # All that exist
 .PHONY: clean
 clean:
-	rm -f $(DOC).bbl $(DOC).dvi $(DOC).aux $(DOC).blg $(DOC).log
+	ls $(DOC).* | grep -v "$(DOC)\.\(tex\)" | xargs -d"\n" rm
