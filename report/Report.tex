@@ -1,0 +1,126 @@
+\documentclass[a4paper,12pt]{article} % or report for \chapters
+\usepackage[utf8]{inputenc}
+
+\usepackage{hyperref} % references
+\usepackage[margin=0.75in]{geometry} % margins
+
+
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{wrapfig}
+\usepackage{booktabs} % tables, I think
+
+% Code listings
+\usepackage{listings}
+\lstdefinestyle{mystyle}{
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+
+% for {align}, {equation} (multi-line formula, &= to align on =)
+\usepackage{amsmath} 
+\usepackage{amssymb} 
+
+% graphics, including encapsulated postscript
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\epstopdfsetup{update} % only regenerate pdf files when eps file is newer
+\graphicspath{ {figures/} }
+
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% no title page numbers
+\pagenumbering{gobble}
+
+% citations
+\usepackage{cite}
+\usepackage[toc,page]{appendix}
+
+% glossaries / acronyms
+\usepackage[acronym, toc, nopostdot, nonumberlist]{glossaries}
+\newglossary[flg]{ignore}{ac}{expand}{Fake Entries}
+\makeglossaries
+\input{gloss}
+
+\titleformat{\chapter}{\normalfont\bfseries}{\thechapter}{1em}{\Large}
+
+
+%Utilities:
+
+	
+%\begin{lstlisting}[caption=Code]
+%\end{lstlisting}
+
+%bibtex
+%\cite{...}
+
+%\begin{enumerate}
+%	\item 
+%\end{enumerate}
+
+%\includegraphics[width=\textwidth]{img.png}
+
+
+
+%preamble
+
+%report starts
+\begin{document}
+	\begin{titlepage}
+        \centering
+        {\huge\bfseries TITLE \par}
+        \vspace{1.5cm}
+        {\Large 150003282 \par}
+        \vspace{0.5cm}
+        {\large DATE \par}
+        \vspace{0.5cm}
+    \end{titlepage}
+
+    \pagebreak
+    \pagenumbering{arabic}
+    % \input{content/abstract}
+
+
+    % \pagebreak
+    % \tableofcontents
+    % \pagebreak
+
+	
+	
+    % \input{content/intro}
+
+
+
+
+	
+	\pagebreak
+
+	% bibliography
+	% \addcontentsline{toc}{chapter}{Bibliography}
+    % \bibliography{references}
+    % \bibliographystyle{unsrt}
+   
+	% terms
+    % \printglossary[type=\acronymtype,title=List of Terms,toctitle=Terms]
+
+	% appendix
+	% \include{app/appendix}
+
+
+
+\end{document}
+
+
